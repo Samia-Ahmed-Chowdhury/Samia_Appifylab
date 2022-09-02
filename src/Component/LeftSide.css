@@ -1,0 +1,19 @@
+.left_bar{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.left_bar h1{
+    font-weight: 700;
+}
+.left_bar ul{
+    padding-left: 0 !important;
+    padding: 1rem !important;
+}
+.left_bar ul li{padding-bottom: 0.6rem;}
+.left_bar li h5{
+    padding-left: 0.6rem;
+    padding-top: 0.5rem;
+    font-size: 15px;
+    font-weight: 500;
+}

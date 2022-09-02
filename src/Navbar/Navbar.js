@@ -190,13 +190,14 @@ function Navbar() {
                                 </li>
                                 <li>
                                     <div className="container">
-                                        <div class="row">
+                                    <h2 className=''>Download App</h2>
+                                        <div class="row my-5">
                                             <div class=" col-8">
                                                 <div class="row">
                                                     <div class=" col-5  ">
-                                                        <img src='../images/app-store.svg' alt="img" className='img-fluid' />
+                                                        <img src='../images/app_store.svg' alt="img" className='img-fluid' />
                                                     </div>
-                                                    <div class=" col-5  my-auto ">
+                                                    <div class=" col-5  ">
                                                         <img src='../images/play_store.svg' alt="img" className='img-fluid' />
                                                     </div>
                                                 </div>

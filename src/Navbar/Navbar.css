@@ -269,7 +269,7 @@ nav {
     background-color: #E9EBEE !important;
 }
 
-.slide li:not(:nth-last-child(2)) {
+.slide li:not(:last-child) {
     margin-bottom: 5rem;
 }
 
