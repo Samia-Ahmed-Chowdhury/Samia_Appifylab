@@ -32,12 +32,12 @@ function RightSide() {
           </div>
         </div>
 
-        <div className="row my-5">
+        <div className="row mt-5">
           <div className="Right_bar col-xl-10 col-lg-10 col-md-10 col-sm-0 col-0  m-auto ">
             <h1>Your Friends</h1>
 
             <form id="form">
-              <div className="form_row">
+              <div className="right_form_row">
                 <input type="search" required />
                 <button type="submit">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

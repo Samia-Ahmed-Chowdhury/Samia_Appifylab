@@ -4,6 +4,7 @@ import logo from "../images/logo.png"
 import { NavLink } from 'react-router-dom'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import Slide from './Components/Slide';
 
 function Navbar() {
     const [show, setShow] = useState(false)
@@ -11,8 +12,9 @@ function Navbar() {
     return (
         <>
             <header className='header'>
-                <nav className="navbar navbar-expand-sm">
+                <nav className="navbar fixed-top navbar-expand-lg">
                     <div className="container ">
+                    
                         <div className="logo">
                             <NavLink to="/" >
                                 <img src={logo} alt="logo" className="img-fluid" />
@@ -78,145 +80,19 @@ function Navbar() {
 
                             </ul>
                         </div>
-
-
-                        <button className="navbar-toggler" type="button" >
                             <label>
                                 <input className="toggle_btn" type="checkbox" id="toggle_btn" onClick={() => setShow(!show)} />
-                                <div className="toggle">
+                                <div className="toggle navbar-toggler " id="navbar-toggler">
                                     <span className="top_line common"></span>
                                     <span className="mid_line common"></span>
                                     <span className="end_line common"></span>
                                 </div>
                             </label>
-                        </button>
-
                     </div>
-
-
-                    {
-                        show ? 
-                        <div className="slide" id="slide">
-                            <ul className="navbar-nav  me-auto mb-lg-0 m-auto">
-
-                                <li className='account'>
-                                    <NavLink className="nav-link " aria-current="page" to="/">
-                                        <AccountCircleIcon className='account_svg' />
-                                        <span>  Adnan Chowdhury <KeyboardArrowDownIcon /> </span>
-
-                                    </NavLink>
-
-                                </li>
-
-
-                                <li>
-                                    <h2 className=''>Your Friends</h2>
-                                    <div class=" frnds_row container-fluid d-flex">
-                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2  m-auto d-flex flex-column ">
-                                            <AccountCircleIcon />
-                                            <span>  Adnan Chowdhury </span>
-                                        </div>
-                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2  m-auto d-flex flex-column ">
-                                            <AccountCircleIcon />
-                                            <span>  Adnan Chowdhury </span>
-                                        </div>
-                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2  m-auto d-flex flex-column">
-                                            <AccountCircleIcon />
-                                            <span>  Adnan Chowdhury </span>
-                                        </div>
-                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2  m-auto d-flex flex-column ">
-                                            <AccountCircleIcon />
-                                            <span>  Adnan Chowdhury </span>
-                                        </div>
-                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2  m-auto d-flex flex-column">
-                                            <AccountCircleIcon />
-                                            <span>  Adnan Chowdhury </span>
-                                        </div>
-                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2  m-auto d-flex flex-column">
-                                            <AccountCircleIcon />
-                                            <span>  Adnan Chowdhury </span>
-                                        </div>
-                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2  m-auto d-flex flex-column">
-                                            <AccountCircleIcon />
-                                            <span>  Adnan Chowdhury </span>
-                                        </div>
-                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2  m-auto d-flex flex-column ">
-                                            <AccountCircleIcon />
-                                            <span>  Adnan Chowdhury </span>
-                                        </div>
-                                    </div>
-
-                                </li>
-
-
-                                <li>
-                                    <div className="container">
-                                        <h2 className=''>Explore</h2>
-
-                                        <div className="col-12 d-flex justify-content-between my-5">
-                                            <div className="">
-                                                <div className='explore_card card'>
-                                                    <img src='../images/saved.svg' alt="img" className='img-fluid' />
-                                                    <h5>Saved </h5>
-                                                </div>
-                                            </div>
-                                            <div className="">
-                                                <div className='explore_card card'>
-                                                    <img src='../images/ppl.svg' alt="img" className='img-fluid' />
-                                                    <h5>People</h5>
-                                                </div>
-                                            </div>
-                                            <div className="">
-                                                <div className='explore_card card'>
-                                                    <img src='../images/grps.svg' alt="img" className='img-fluid' />
-                                                    <h5>Groups</h5>
-                                                </div>
-                                            </div>
-                                            <div className="">
-                                                <div className='explore_card card'>
-                                                    <img src='../images/pages.svg' alt="img" className='img-fluid' />
-                                                    <h5>Pages</h5>
-                                                </div>
-                                            </div>
-                                            <div className="">
-                                                <div className='explore_card card'>
-                                                    <img src='../images/events.svg' alt="img" className='img-fluid' />
-                                                    <h5>Events</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </li>
-                                <li>
-                                    <div className="container">
-                                    <h2 className=''>Download App</h2>
-                                        <div class="row my-5">
-                                            <div class=" col-8">
-                                                <div class="row">
-                                                    <div class=" col-5  ">
-                                                        <img src='../images/app_store.svg' alt="img" className='img-fluid' />
-                                                    </div>
-                                                    <div class=" col-5  ">
-                                                        <img src='../images/play_store.svg' alt="img" className='img-fluid' />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                            </ul>
-                        </div>
-                            : null
-                    }
-
-
-
-
-
-
                 </nav>
+                {
+                        show? <Slide/> : null
+                    }
             </header>
         </>
     )

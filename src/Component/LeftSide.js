@@ -3,8 +3,9 @@ import "./LeftSide.css"
 function LeftSide() {
     return (
         <>
+        
             <section id="left_side">
-                <div className="row py-5">
+                <div className="row py-4">
                     <div className="left_bar col-xl-10 col-lg-10 col-md-10 col-sm-0 col-0  m-auto ">
                         <h1>Explore</h1>
                         <ul>
@@ -56,14 +57,20 @@ function LeftSide() {
                     </div>
                 </div>
 
-                <div className="row my-5">
+                <div className="row py-4">
                     <div className="left_bar col-xl-10 col-lg-10 col-md-10 col-sm-0 col-0  m-auto ">
                         <h1>Suggested People</h1>
                         <div className='d-flex align-items-center'>
-                            <img src='../images/sadek.png' alt="img" className='img-fluid' style={{ width: "20%" }} />
+                            <img src='../images/sadek.png' alt="img" className='img-fluid' style={{ width: "17%" }} />
                             <h5>Sadek Hossain </h5>
+                            <div> <button className='add_icon'> +
+                               
+                                </button> </div>
                             <div>
-                                <button className='add'>Add +</button>
+                                <button className='add'>Add +
+                               
+                                </button>
+                             
                             </div>
                         </div>
 

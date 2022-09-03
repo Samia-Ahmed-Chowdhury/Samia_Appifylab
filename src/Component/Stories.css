@@ -1,0 +1,53 @@
+
+.stories_col .card{
+    height: 130px;
+    width: 100px;
+    border-radius: 10px;
+    border:none;
+}
+.stories_col .card img{
+    border-radius: 10px 10px 0 0;
+}
+.stories_col .card .overlay {
+    background-color: #1E1E1E;
+    position: absolute;
+    width: 100px;
+    height: 44px;
+    border-radius: 20px 20px 0 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.add_story_div{
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center !important;
+    bottom: 6px;
+    left: 26px;
+    position: absolute;
+    color: white;
+}
+.user_story_div{
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center !important;
+    bottom: -6px;
+    left: 26px;
+    position: absolute;
+    color: white;
+}
+.user_story_icon{
+    font-size: 2rem !important;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.user_story_card{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: #ABB0AC;
+}

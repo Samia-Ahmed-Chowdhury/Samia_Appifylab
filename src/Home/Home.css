@@ -6,7 +6,17 @@
 
 
 
-
+@media only screen and (max-width:991px) {
+  .left_side_col{
+    display: none;
+  }
+}   
+@media only screen and (max-width:991px) {
+    .right_side_col{
+      display: none;
+    }
+  }   
+  
 
 
 

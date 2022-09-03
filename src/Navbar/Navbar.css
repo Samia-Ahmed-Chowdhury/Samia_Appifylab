@@ -27,7 +27,9 @@ li {
 nav {
     background-color: #34465D;
     color: #E0DDDD;
+   
 }
+
 
 .search_li,
 .search_icon {
@@ -101,7 +103,7 @@ nav {
     border: none;
 }
 
-.navbar-toggler .toggle {
+ .toggle {
     height: 35px;
     width: 35px;
     z-index: 1;
@@ -140,7 +142,7 @@ nav {
 }
 
 .toggle_btn:checked~.toggle .top_line {
-    left: 5px;
+    left: 0;
     top: 18px;
     width: 25px;
     transform: rotate(45deg);
@@ -152,7 +154,7 @@ nav {
 }
 
 .toggle_btn:checked~.toggle .end_line {
-    left: 5px;
+    left: 0;
     top: 18px;
     width: 25px;
     transform: rotate(-45deg);
@@ -241,7 +243,7 @@ nav {
     }
 }
 
-@media only screen and (max-width:575px) {
+@media only screen and (max-width:991px) {
 
     .user {
         display: none;
@@ -260,17 +262,24 @@ nav {
         padding: 0 1rem;
     }
 }
+.toggle_btn:checked~.slide {
+    transform: translateX(0);
+    position: fixed;
+}
+
 
 .slide {
-    height: 100% !important;
-    width: 100vw !important;
+    z-index: 99;
+    height: 100vh;
+    width: 293px;
     transition: 0.6s ease;
-    transform: translateY(5px);
+    right: 0;    top: 49px;
+    padding-top: 20px;
     background-color: #E9EBEE !important;
 }
 
 .slide li:not(:last-child) {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .slide h2 {
@@ -281,12 +290,12 @@ nav {
 }
 
 .slide .account {
-    padding-left: 40px;
+    padding-left: 20px;
 }
 
 .slide .account .account_svg {
-    width: 5rem !important;
-    height: 5rem !important;
+    width: 6rem !important;
+    height: 6rem !important;
 }
 
 .slide .account span {
@@ -298,7 +307,7 @@ nav {
 
 .slide .frnds_row {
     overflow-x: scroll;
-    grid-column-gap: 9px;
+    grid-column-gap: 10px;
 }
 
 .slide .frnds_row div {
@@ -341,6 +350,9 @@ nav {
     }
 
     .explore_card img {
-        max-width: 80%;
+        max-width: 80% !important;
     }
 }
+
+
+   
