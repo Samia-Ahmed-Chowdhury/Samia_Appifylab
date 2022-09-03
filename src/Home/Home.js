@@ -1,7 +1,8 @@
 import React from 'react'
-import Hero from './Component/Hero'
-import LeftSide from './Component/LeftSide'
-import RightSide from './Component/RightSide'
+import "./Home.css";
+import Hero from '../Component/Hero'
+import LeftSide from '../Component/LeftSide'
+import RightSide from '../Component/RightSide'
 
 function Home() {
   return (

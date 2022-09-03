@@ -46,28 +46,31 @@ function LeftSide() {
                     <div className="left_bar col-xl-10 col-lg-10 col-md-10 col-sm-0 col-0  m-auto ">
                         <h1>Download App</h1>
                         <div className="row">
-                            <div class=" col-xl-6 col-lg-6 col-md-6 col-sm-0 col-0    ">
+                            <div className=" col-xl-6 col-lg-6 col-md-6 col-sm-0 col-0    ">
                                 <img src='../images/app_store.svg' alt="img" className='img-fluid' />
                             </div>
-                            <div class=" col-xl-6 col-lg-6 col-md-6 col-sm-0 col-0    ">
+                            <div className=" col-xl-6 col-lg-6 col-md-6 col-sm-0 col-0    ">
                                 <img src='../images/play_store.svg' alt="img" className='img-fluid' />
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="row">
+                <div className="row my-5">
                     <div className="left_bar col-xl-10 col-lg-10 col-md-10 col-sm-0 col-0  m-auto ">
-                        <div className='d-flex'>
-                            <img src='../images/sadek.png' alt="img" className='img-fluid' />
+                        <h1>Suggested People</h1>
+                        <div className='d-flex align-items-center'>
+                            <img src='../images/sadek.png' alt="img" className='img-fluid' style={{ width: "20%" }} />
                             <h5>Sadek Hossain </h5>
-                            <button className='add'>Add +</button>
+                            <div>
+                                <button className='add'>Add +</button>
+                            </div>
                         </div>
 
                     </div>
                 </div>
-        
-        </section>
+
+            </section>
         </>
     )
 }
