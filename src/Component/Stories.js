@@ -8,7 +8,7 @@ function Stories() {
             <section id="stories">
                 <div className='container'>
                     <div className="row ">
-                        <div className="stories_col col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 d-flex justify-content-end ">
+                        <div className="stories_col card1 col-xl-3 col-lg-3 col-md-3 col-sm-5 col-5 d-flex justify-content-end " >
                             <div className='card'>
                                 <img src='../images/st1.png' alt="img" className='img-fluid' />
 
@@ -43,9 +43,9 @@ function Stories() {
                             <div className=" col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 m-auto">
                                 <AccountCircleIcon style={{ fontSize: "3rem" }} />
                             </div>
-                            <div className=" col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11 m-auto">
+                            <div className=" col-xl-11 col-lg-11 col-md-11 col-sm-10 col-10 m-auto">
                                 <form id="form">
-                                    <div className="form_row">
+                                    <div className="post_form_row">
                                         <input type="search" placeholder="Create Your Post" required />
 
                                     </div>
@@ -79,10 +79,10 @@ function Stories() {
 
                     <div className='row my-5 ' style={{ background: "white", borderRadius: "10px" }}>
                         <div className='row'>
-                            <div className="py-3 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+                            <div className="py-3 col-xl-2 col-lg-3 col-md-4 col-sm-4 col-5">
                                 <h5 style={{color:"red",paddingLeft:"10px"}}>Public Post</h5>
                                 </div>
-                                <div className="py-3 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+                                <div className="py-3 col-xl-2 col-lg-3 col-md-4 col-sm-4 col-5">
                                 <h5>Friend Post</h5>
                                 </div>
                         </div>

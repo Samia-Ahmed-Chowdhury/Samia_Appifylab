@@ -64,12 +64,33 @@ html {
 .feeling_part p{
 font-size: 1rem;
 padding-left: 5px;
+align-items: center;
 }
 h5{
     font-size: 1.2rem;
     font-weight: 700;
 }
- 
+.post_form_row{
+    position: relative;
+    display: block;
+    border: none;
+    border-radius: 20px;
+    padding: .5rem 25rem .5rem 4.5rem;
+    background-color: #f2f2f2;
+}
+.post_form_row input{
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 13px;
+    color: bisque;
+}
+
 @media only screen and (max-width:1300px) {
     html {
         font-size: 60%;
@@ -86,9 +107,37 @@ h5{
         font-size: 55%;
     }
 }
-
+@media only screen and (max-width:991px) {
+    #stories{
+        margin-top: 2.5rem;
+    }
+    #stories .card1{
+        width: 118px;   
+    }
+    .feeling_part img{
+        height: 11px !important; 
+    }
+}
 @media only screen and (max-width:768px) {
     html {
         font-size: 45%;
     }
+    .add_story_div {
+        bottom: 18px;
+        left: 34px;
+    }
+    .add_story_div img {
+        max-width: 60%;
+    }
 }    
+@media only screen and (max-width:386px) {
+    .post_form_row{
+        padding: .5rem 0rem .5rem 4.5rem;
+    }
+}   
+
+@media only screen and (max-width:350px) {
+    #stories .card1{
+        width: 118px;   
+    }
+}   
