@@ -1,4 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
 
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
 .stories_col .card{
     height: 130px;
     width: 100px;
@@ -51,3 +61,34 @@
     justify-content: center;
     background: #ABB0AC;
 }
+.feeling_part p{
+font-size: 1rem;
+padding-left: 5px;
+}
+h5{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+ 
+@media only screen and (max-width:1300px) {
+    html {
+        font-size: 60%;
+    }
+}
+@media only screen and (max-width:1200px) {
+    html {
+        font-size: 59%;
+    }
+}
+
+@media only screen and (max-width:998px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    html {
+        font-size: 45%;
+    }
+}    
