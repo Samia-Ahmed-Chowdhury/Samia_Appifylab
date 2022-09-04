@@ -10,41 +10,31 @@ html {
     font-size: 62.5%;
 }
 
-@media only screen and (max-width:1300px) {
-    html {
-        font-size: 60%;
-    }
+.sugesst_ppl_row,
+.might_like{
+    padding: 20px;
 }
-
-.responsive_show {
-    display: none !important;
+.sugesst_ppl_row h1,
+.might_like h1{
+    font-weight: 700;
+    font-size: 2rem;
 }
-
-@media only screen and (max-width:991px) {
-    .responsive_show {
-        display: block !important;
-    }
+.sugesst_ppl_row h5,
+.might_like_row span {
+    font-size: 1.5rem;
+    font-weight: 700;
 }
-
-@media only screen and (max-width:1200px) {
-    html {
-        font-size: 59%;
-    }
+.might_like_row h5{
+    font-size: 1.2rem;
+    color: rgb(28, 28, 28);
+    font-weight: 600;
 }
-
-@media only screen and (max-width:998px) {
-    html {
-        font-size: 55%;
-    }
+.sugesst_ppl_row .add {
+    padding: 5px 10px;
+    border: none;
+    font-size: 1.3rem;
+    border-radius: 6px;
 }
-
-@media only screen and (max-width:768px) {
-    html {
-        font-size: 45%;
-    }
-}
-
-
 
 
 
@@ -52,7 +42,6 @@ html {
     html {
         font-size: 59%;
     }
-
 }
 
 @media only screen and (max-width:998px) {
@@ -72,3 +61,4 @@ html {
         font-size: 45%;
     }
 }
+

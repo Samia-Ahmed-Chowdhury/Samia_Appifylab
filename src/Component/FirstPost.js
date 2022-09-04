@@ -7,17 +7,18 @@ import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import Reaction from './Reaction';
 import CommentBox from './CommentBox';
 import Comment from './Comment';
+import LanguageIcon from '@mui/icons-material/Language';
 function FirstPost() {
     return (
         <>
-            <div className='container' style={{ background: "white" }}>
+            <div className='container' style={{ background: "white",borderRadius:"10px" }}>
                 <div className='row post_user_info py-4'>
-                    <div className=" col-xl-1 col-lg-2 col-md-2 col-sm-2 col-3 ">
+                    <div className=" col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 ">
                         <AccountCircleIcon style={{ fontSize: "4.5rem" }} />
                     </div>
-                    <div className=" col-xl-5 col-lg-5 col-md-5 col-sm-5 col-3 ">
+                    <div className=" col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5 px-3 ">
                         <h4>Adnan Chowdhury</h4>
-                        <p>1 hours ago</p>
+                        <p>1 hours ago  <LanguageIcon style={{paddingLeft:"2px"}}/> </p>
                     </div>
 
                     <div className=" col-xl-1 col-lg-2 col-md-2 col-sm-2 col-3 mx-auto me-0 ">
