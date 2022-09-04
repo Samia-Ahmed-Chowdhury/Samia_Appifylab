@@ -13,9 +13,14 @@ function Home() {
             <div className="left_side_col col-xl-3 col-lg-3 col-md-3 col-sm-3 col-0  m-auto ">
               <LeftSide />
             </div>
-            <div className="col-xl-6 col-lg-6 col-md-6 col-sm-10 col-10  m-auto ">
+            
+            <div className="col-xl-6 col-lg-6 col-md-10 col-sm-12 col-12  m-auto ">
+          
               <Hero />
-            </div>
+            
+              </div>
+              
+
             <div className="right_side_col  col-xl-3 col-lg-3 col-md-3 col-sm-3 col-0  m-auto ">
               <RightSide />
             </div>
