@@ -26,9 +26,9 @@ function PostPic() {
 
                 </div>
                 <div className='post_pic row m-auto'>
-                    <div className=" col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 m-auto  ">
-                        <img src='../images/post3.png' alt="img" className='img-fluid' />
-                    </div>
+                
+                        <img src='../images/post3.png' alt="img"  />
+                   
                 </div>
                 <div className='row my-5'>
                     <span style={{ textAlign: "start", fontSize: "10px", paddingLeft: "28px" }}>
@@ -106,13 +106,13 @@ function PostPic() {
                     </div>
 
                 </div>
-                <div className='post_pic row m-auto'>
-                    <div className=" col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 m-auto  ">
+                <div className='post_pic post_row row m-auto'>
+                    
                         <h6>Since im detoxing and my head is becoming clearer, it's time for me to
                             dive into this book! It's a self-reflective book! It's a book of self-control and discline ! I hghly recommand 🦾🦾
                         </h6>
                         <img src='../images/post5.png' alt="img" className='img-fluid' />
-                    </div>
+                
                 </div>
 
                 <div className='row my-5'>
@@ -148,9 +148,9 @@ function PostPic() {
 
                 </div>
                 <div className='post_pic row m-auto'>
-                    <div className=" col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 m-auto  ">
+                
                         <img src='../images/post6.png' alt="img" className='img-fluid' />
-                    </div>
+               
                 </div>
                 <div className='row my-5'>
                     <span style={{ textAlign: "start", fontSize: "10px", paddingLeft: "28px" }}>
@@ -187,13 +187,12 @@ function PostPic() {
                     </div>
 
                 </div>
-                <div className='post_pic row m-auto'>
-                    <div className=" col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 m-auto  ">
+                <div className='post_pic post_row  row m-auto'>
+                   
                         <h6>Stop confusing temporary happiness for long-term connections!Ther are same people that came into your life that is judt there for thr moments! NOt everyone deserves your inside story,Your happiness for long-term connections!Ther are same people that came into your life that is judt there for thr moment
                         🖤💪
                           </h6>
                 
-                    </div>
                 </div>
 
                 <div className='row my-5'>
