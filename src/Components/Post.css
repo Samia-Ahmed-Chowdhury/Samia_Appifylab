@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    font-size: 62.5%
+}
+
+:root {
+    --main-color: #34465D;
+    --primary-color: #F0F0F0;
+    --icon-color: #E1E1E1;
+}
+
+a {
+    text-decoration: none !important;
+
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+li {
+    list-style: none !important;
+}
+
+/* ------------- post_user_info--------- */
+
+.post_user_info {
+    display: grid;
+    grid-template-columns: 8% 84% 9%;
+    align-content: center;
+}
+
+.post_user_info h4 {
+    font-size: 1.4rem;
+    padding-top: 10px;
+    font-weight: 700;
+}
+
+.post_user_info p {
+    font-size: 1rem;
+    color: #4b4a4a;
+}
+.dropdown-menu li{
+    font-size: 10px;
+}
+/* -------------end -- post_user_info--------- */
+
+.post_row h6 {
+    font-size: 1.6rem;
+}
+
+/* ------------- -- Form vote--------- */
+
+.vote_form_row input {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #2f2f30;
+}
+
+.vote_form_row .label {
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    padding: 5px 13px;
+    border: 1px solid rgb(181, 181, 180);
+}
+
+.vote_form_row .label h5 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.vote_form_row .label h4 {
+    font-size: 1.29rem;
+    font-weight: 600;
+}
+
+/* ------------- -- end---Form vote--------- */
+.reactions {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.reactions img {
+    width: 18px;
+    height: 18px;
+}
+
+.reactions p {
+    font-size: 12px;
+    padding-left: 8px;
+    margin-top: 1px;
+}
+
+.reactions .comment_span {
+    text-align: end;
+    font-size: 10px;
+    padding-right: 28px;
+}
+
+/* ----------post 1--------- */
+
+.postNum1 {
+    visibility: hidden;
+}
+
+/* ------------- -- end---Reactions--------- */
+.actions {
+    background: var(--icon-color);
+    margin: 0 10px;
+}
+
+.actions img {
+    width: 18px;
+    height: 18px;
+}
+
+.actions p {
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: 7px;
+}
+
+/* ------------- -- end---actions--------- */
+.comment_row {
+    display: grid;
+    grid-template-columns: 8% 10% 80%;
+}
+
+.comment_form {
+    position: relative;
+    display: block;
+    border: none;
+    border-radius: 15px;
+    padding: 0.5rem 18rem 0.5rem 2.5rem;
+    background-color: #f2f2f2;
+}
+
+.comment_form input {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    color: bisque;
+}
+
+.comment_form .submit_btn {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 26px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #525151;
+}
+
+/* ------------- -- end---comment box--------- */
+
+.comment {
+    display: grid;
+    grid-template-columns: 10% 30% 10%;
+}
+
+.op_row {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 20% 20% 100%;
+}
+
+.op_row p {
+    font-size: 1rem;
+}
+/* ----------2nd post---------------- */
+.img_row{
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: 1fr 1fr;
+    margin: 8px 0;
+}
+.img_row img,
+.img_row2 img{
+    width: 100%;
+}
+.img_row2{
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.img_row2 .last_img{
+    position: relative;
+}
+.img_row2 .count_num {
+    position: absolute;
+    color: white;
+    z-index: 99;
+    top: 40%;
+    font-weight: 900;
+    font-size: 20px;
+    left: 40%;
+}
+
+.postNum2 .emo2,
+.postNum2 .emo3{
+    display: none;
+}
+.actions2 p{
+    color: red;
+    font-weight: 600;
+}
+
+/* -----------post num 4-------------- */
+.postNum4 .emo3{
+    display: none;
+}
+.actions4 p{
+    color: orangered;
+    font-weight: 600;
+}
+
+/* media query */
+
+@media only screen and (max-width:1300px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    html {
+        font-size: 59%;
+    }
+
+    .post_user_info {
+        grid-template-columns: 10% 82% 9%;
+    }
+    .comment {
+        grid-template-columns: 11% 32% 10%;
+    }
+    
+}
+
+@media only screen and (max-width:998px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    html {
+        font-size: 45%;
+    }
+
+    .post_user_info {
+        grid-template-columns: 8% 82% 9%;
+    }
+    .comment {
+        grid-template-columns:9% 32% 10%;
+    }
+    
+}
+
+@media only screen and (max-width:768px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+@media only screen and (max-width:499px) {
+    .post_user_info {
+        grid-template-columns: 10% 82% 9%;
+    }
+
+    .comment_row {
+        grid-template-columns: 10% 15% 70%;
+    }
+    .comment {
+        grid-template-columns: 10% 35% 10%;
+    }
+    .replied_row{
+        width: 49.66666667% !important;
+    }
+}
+@media only screen and (max-width:433px) {
+.replied_row {
+    width: 55% !important;
+}
+}
+@media only screen and (max-width:401px) {
+    .replied_row {
+        width: 65% !important;
+    }
+    }
+@media only screen and (max-width:400px) {
+    .post_user_info {
+        grid-template-columns: 12% 78% 9%;
+    }
+
+    .comment_row {
+        grid-template-columns: 10% 19% 70%;
+    }
+    .comment {
+        grid-template-columns: 13% 42% 10%;
+    }
+}
+@media only screen and (max-width:355px) {
+    .replied_row {
+        width: 75% !important;
+    }
+    }
+    @media only screen and (max-width:355px) {
+        .replied_row {
+            width: 90% !important;
+        }
+        }
+@media only screen and (max-width:300px) {
+    .post_user_info {
+        grid-template-columns: 13% 75% 9%;
+    }
+
+    .comment_row {
+        grid-template-columns: 13% 20% 60%;
+    }
+
+    .comment_form {
+        padding: 0.5rem 18rem 0.5rem 1.5rem;
+    }
+    .comment {
+        grid-template-columns: 15% 50% 10%;
+    }
+}

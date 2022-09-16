@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    font-size: 62.5%
+}
+
+:root {
+    --main-color: #34465D;
+    --primary-color: #F0F0F0;
+    --icon-color: #E1E1E1;
+}
+
+a {
+    text-decoration: none !important;
+
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+li {
+    list-style: none !important;
+}
+
+
+/* ---------------- stories -------------- */
+.stories_col {
+    display: grid;
+    grid-template-columns: 115px 115px;
+}
+
+.stories_col .card {
+    height: 140px;
+    width: 100px;
+    border-radius: 8px;
+    border: none;
+    background-color: #717171;
+}
+
+.card img {
+    border-radius: 10px 10px 0 0;
+}
+
+.card .overlay {
+    background-color: #1E1E1E;
+    position: absolute;
+    width: 100px;
+    height: 44px;
+    border-radius: 20px 20px 8px 8px;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.add_story_div {
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center !important;
+    bottom: 6px;
+    left: 26px;
+    position: absolute;
+    color: white;
+}
+
+.user_story_div {
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center !important;
+    bottom: -4px;
+    left: 5px;
+    position: absolute;
+    color: white;
+}
+
+.user_story_icon {
+    font-size: 3rem !important;
+    color: var(--icon-color);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.user_story_card {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: #ABB0AC !important;
+}
+
+/* ---------------- end stories -------------- */
+
+/* ---------------- post part -------------- */
+.form_container {
+    display: grid;
+    grid-template-columns: 8% 92%;
+}
+
+.post_form_row {
+    position: relative;
+    display: block;
+    border: none;
+    border-radius: 18px;
+    padding: .5rem 25rem .5rem 4.5rem;
+    background-color: #f2f2f2;
+}
+
+.post_form_row input {
+    display: inline-block;
+    vertical-align: top;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    color: bisque;
+}
+
+.feeling_part svg {
+    width: 1.4rem;
+    height: 1.3rem;
+}
+
+.feeling_part p {
+    font-size: 1rem;
+    padding-left: 2px;
+    align-items: center;
+}
+
+.post {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    padding: 1rem;
+}
+
+.post h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* ---------------- end post part -------------- */
+
+/* -------------Responsive frnds circle------------- */
+.responsive_view {
+    display: none !important;
+}
+
+
+
+
+@media only screen and (max-width:1300px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    html {
+        font-size: 59%;
+    }
+
+    .form_container {
+        grid-template-columns: 10% 90%;
+    }
+}
+
+@media only screen and (max-width:998px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    #stories {
+        margin-top: 2.5rem;
+    }
+
+    #stories .card1 {
+        width: 118px;
+    }
+
+    .form_container {
+        grid-template-columns: 8% 92%;
+    }
+
+    .feeling_part img {
+        height: 11px !important;
+    }
+
+    .responsive_view {
+        display: block !important;
+    }
+
+    .frnds_row {
+        overflow-x: scroll;
+        margin: 10px 0;
+    }
+
+    .frnds_row div {
+        border: none;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 9px;
+    }
+
+    .frnds_row div span {
+        font-size: 10px;
+        color: #5d5d5d;
+        text-align: center
+    }
+}
+
+/* ---------end frnd circle-------- */
+
+/* ------------suggested ppl---------- */
+
+.sugesst_ppl_row,
+.might_like,
+.might_like_ppl {
+    padding: 0 20px;
+}
+
+.responsive_view hr {
+    margin: .8rem 0 0 !important;
+}
+
+.sugesst_ppl_row h1,
+.might_like_ppl h1 {
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.sugesst_ppl_row h5,
+.might_like_row span {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.might_like_row h5 {
+    font-size: 1.2rem;
+    color: rgb(28, 28, 28);
+    font-weight: 600;
+}
+
+
+.sugesst_ppl_row .add {
+    padding: 5px 10px;
+    border: none;
+    font-size: 1.3rem;
+    border-radius: 6px;
+}
+.suggested_row{
+    grid-template-columns: 12% 45%;
+    display: grid;   
+}
+.might_like {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.might_like_row {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.hero_btn {
+    font-size: 1.4rem;
+    outline: none;
+    color: black;
+    background-color: white;
+    padding: 7px 16px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid #9aa1a7;
+    border-radius: 10px;
+}
+
+.hlper_btn {
+    font-size: 1.4rem;
+    outline: none;
+    border: 1px solid red;;
+    color: white;
+    background-color: red;
+    padding: 7px 16px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+/* ------------suggested ppl---------- */
+
+
+
+
+@media only screen and (max-width:768px) {
+    html {
+        font-size: 45%;
+    }
+
+    .add_story_div {
+        bottom: 18px;
+        left: 34px;
+    }
+
+    .add_story_div img {
+        max-width: 60%;
+    }
+}
+
+@media only screen and (max-width:530px) {
+    .might_like_row {
+        grid-template-columns: 22% 80%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .form_container {
+        grid-template-columns: 10% 90%;
+    }
+    .might_like_row {
+        grid-template-columns: 25% 80%;
+    }
+}
+@media only screen and (max-width:450px) {
+    .might_like_row {
+        grid-template-columns: 27% 80%;
+    }
+    .hero_btn {
+        padding: 6px 12px;
+    }
+    
+    .hlper_btn {
+        padding: 6px 12px;
+    }
+}
+@media only screen and (max-width:427px) {
+    .might_like_row {
+        grid-template-columns: 33% 80%;
+    }
+    .hero_btn {
+        padding: 5px 10px;
+    }
+    
+    .hlper_btn {
+        padding: 5px 10px;
+    }
+}
+
+@media only screen and (max-width:386px) {
+    .post_form_row {
+        padding: .5rem 0rem .5rem 4.5rem;
+    }
+
+    .form_container {
+        grid-template-columns: 14% 86%;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    #stories .card1 {
+        width: 118px;
+    }
+    .might_like_row {
+        grid-template-columns: 41% 80%;
+    }
+    .hero_btn {
+        padding: 4px 8px;
+    }
+    
+    .hlper_btn {
+        padding: 4px 8px;
+    }
+}

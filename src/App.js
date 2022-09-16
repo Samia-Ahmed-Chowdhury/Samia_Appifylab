@@ -3,15 +3,15 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import Navbar from './Navbar/Navbar';
 import Home from './Home/Home';
-
 function App() {
   return (
     <>
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<Home/>}></Route>
+          <Route  path="/" element={<Home/>}></Route>
         </Routes>
+   
    
       </BrowserRouter> 
     </>
